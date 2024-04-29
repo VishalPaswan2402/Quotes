@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recover Password</title>
+    <link rel="stylesheet" href="/forget.css">
+</head>
+<body>
+    <div class="box">
+        <p class="head">Recover Password</p>
+        <form  method="post" action="/home?_method=PATCH">
+            <input class="data" name="username" placeholder="Enter Username">
+            <input class="data" name="email" placeholder="Enter E-mail">
+            <input class="data" name="newpassword" placeholder="Enter New Password">
+            <button class="know">Click To Change Password</button>
+        </form>
+    </div>
+</body>
+</html>

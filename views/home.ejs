@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <div class="box">
+        <p class="head">!deabook</p>
+        <form method="post" action="/home/user">
+            <div class="user">
+                <input class="data name" type="text" name="username" placeholder="Enter User Name">
+            </div>
+            <div class="user">
+                <input class="data pass" type="password" name="password" placeholder="Enter Password">
+            </div>
+            <div class="log">
+                <button class="login">Log In</button>
+            </div>
+        </form>
+        <div class="bottom">
+            <a href="http://localhost:8080/home/signin">Sign Up For New User</a>
+            <a href="http://localhost:8080/home/recover">Forget Password</a>
+        </div>
+    </div>
+</body>
+</html>

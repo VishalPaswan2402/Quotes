@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("hard.avif");
+    background-size: cover;
+}
+.box{
+    height: 670px;
+    width: 500px;
+    border: 4px solid black;
+    background-color: transparent;
+    /* background-color: rgb(230, 252, 255); */
+    border-radius: 30px;
+    margin: 25px auto;
+}
+.head{
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: blue;
+    text-shadow: 1.5px 1.5px rgb(255, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+}
+.data{
+    height: 40px;
+    width: 80%;
+    border-radius: 20px;
+    padding-left: 20px;
+    border: 2px solid rgb(201, 5, 255);
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-left: 37px;
+    background-color: transparent;
+}
+.submit{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(216, 228, 255);
+    height: 40px;
+    width: 84.5%;
+    margin-top: 30px;
+    border: 2px solid rgb(142, 0, 177);
+    margin-left: 37px;
+    border-radius: 20px;
+    background-color: rgb(95, 95, 255);
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(0, 72, 255);
+    color: white;
+}
+.submit:active{
+    background-color: rgb(0, 198, 243);
+}

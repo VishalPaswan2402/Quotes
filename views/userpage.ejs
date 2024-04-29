@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/userpage.css">
+</head>
+<body>
+    <div class="top">
+        <div class="title"><p class="head">!deabook</p></div>
+        <div class="options">
+            <div class="bar">
+                <a class="b1" href="about"><button class="b2">About</button></a>
+                <a class="b1" href="delete"><button class="b2">Delete Account</button></a> 
+            </div>
+            <div class="bar">
+                <a class="b1" href="http://localhost:8080/home/newidea"><button class="b2">New Idea</button></a>
+                <a class="b1" href="http://localhost:8080/home"><button class="b2">Log Out</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="data">
+        <div class="display">
+            <% for(user of users){%>
+                <div class="profile">
+                    <div class="dp">
+                        <div class="us"><p class="letter"><%=user.username[0]%></p></div>
+                        <!-- <div class="cam">
+                        <i id="dpCam" class="fa-solid fa-camera"></i>
+                        </div> -->
+                    </div>
+                    <p class="name"><%=user.username%></p>
+                </div>
+            <%}%> 
+            <div class="yourIdea">
+                <div class="idea">
+                    <p>Your All Idea Is Here</p>
+                </div>
+            </div>
+            
+            <div class="allIdea">
+                <div class="posts">
+                    <p class="postedIdea"><p class="bold">...$...</p>"Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do."</p>
+                </div>
+                <div class="posts">
+                    <p class="postedIdea"><p class="bold">...$...</p>"My friends, love is better than anger. Hope is better than fear. Optimism is better than despair. So let us be loving, hopeful and optimistic. And we'll change the world."</p>
+                </div>
+                <% for(post of posts){%>
+                <div class="posts">
+                    <p class="postedIdea"><p class="bold">...$...</p><%=post[0]%></p>
+                </div>
+                <%}%>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="idea.js"></script>
+</body>
+</html>
